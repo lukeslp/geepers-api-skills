@@ -1,5 +1,5 @@
 ---
-name: dreamer-llm
+name: geepers-llm
 description: Send requests to the dr.eamer.dev LLM API for chat completions, vision analysis, image generation, text-to-speech, and video generation across 12 model providers. Use when you need to call an external LLM endpoint or want to compare responses across providers.
 ---
 

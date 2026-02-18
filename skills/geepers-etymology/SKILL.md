@@ -1,5 +1,5 @@
 ---
-name: dreamer-etymology
+name: geepers-etymology
 description: Look up word etymology, historical sound changes, language family trees, and word evolution through the dr.eamer.dev etymology and diachronic linguistics API. Use for language history research, writing, or exploring how words have changed over time.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: dreamer-data
+name: geepers-data
 description: Fetch structured data from 17 authoritative APIs — arXiv, Census Bureau, GitHub, NASA, Wikipedia, PubMed, news, weather, finance, FEC, and more — through a single endpoint. Use when you need real data from authoritative sources for research, visualizations, or analysis.
 ---
 

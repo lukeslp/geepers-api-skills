@@ -1,4 +1,4 @@
-# dreamer-api-skills
+# geepers-api-skills
 
 Agent Skills for the [dr.eamer.dev](https://dr.eamer.dev) public API — LLM chat, structured data, multi-agent orchestration, corpus linguistics, and etymology.
 
@@ -6,12 +6,12 @@ Agent Skills for the [dr.eamer.dev](https://dr.eamer.dev) public API — LLM cha
 
 ### Claude Code
 ```bash
-/plugin add lukeslp/dreamer-api-skills
+/plugin add lukeslp/geepers-api-skills
 ```
 
 ### OpenAI Codex
 ```bash
-for s in dreamer-llm dreamer-data dreamer-orchestrate dreamer-corpus dreamer-etymology; do
+for s in geepers-llm geepers-data geepers-orchestrate geepers-corpus geepers-etymology; do
   cp -a "skills/$s" "$HOME/.codex/skills/$s"
 done
 ```
@@ -25,11 +25,11 @@ gemini extensions link .
 
 | Skill | Purpose |
 |-------|---------|
-| `dreamer-llm` | Chat, vision, image gen, TTS across 12 LLM providers |
-| `dreamer-data` | Structured data from 17 authoritative APIs |
-| `dreamer-orchestrate` | Dream Swarm (parallel) and Dream Cascade (hierarchical) multi-agent workflows |
-| `dreamer-corpus` | COCA corpus: word frequency, collocations, concordance |
-| `dreamer-etymology` | Word etymology and historical sound change data |
+| `geepers-llm` | Chat, vision, image gen, TTS across 12 LLM providers |
+| `geepers-data` | Structured data from 17 authoritative APIs |
+| `geepers-orchestrate` | Dream Swarm (parallel) and Dream Cascade (hierarchical) multi-agent workflows |
+| `geepers-corpus` | COCA corpus: word frequency, collocations, concordance |
+| `geepers-etymology` | Word etymology and historical sound change data |
 
 ## Authentication
 
