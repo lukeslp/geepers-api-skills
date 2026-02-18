@@ -1,0 +1,27 @@
+{
+  "name": "dreamer-api-skills",
+  "version": "1.0.0",
+  "description": "Agent Skills for the dr.eamer.dev public API — LLM, data, orchestration, corpus linguistics, and etymology",
+  "skills": [
+    {
+      "name": "dreamer-llm",
+      "path": "skills/dreamer-llm/SKILL.md"
+    },
+    {
+      "name": "dreamer-data",
+      "path": "skills/dreamer-data/SKILL.md"
+    },
+    {
+      "name": "dreamer-orchestrate",
+      "path": "skills/dreamer-orchestrate/SKILL.md"
+    },
+    {
+      "name": "dreamer-corpus",
+      "path": "skills/dreamer-corpus/SKILL.md"
+    },
+    {
+      "name": "dreamer-etymology",
+      "path": "skills/dreamer-etymology/SKILL.md"
+    }
+  ]
+}
