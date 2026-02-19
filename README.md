@@ -4,7 +4,7 @@
 [![Language: Markdown](https://img.shields.io/badge/language-markdown-blue.svg)](https://daringfireball.net/projects/markdown/)
 [![Live API](https://img.shields.io/badge/api-live-brightgreen.svg)](https://api.dr.eamer.dev/v1/)
 
-API skill pack for `https://api.dr.eamer.dev` with generated ClawHub artifacts.
+API skill pack for `https://api.dr.eamer.dev` with generated OpenClaw/ClawHub artifacts.
 
 ## Naming Transition
 
@@ -57,7 +57,7 @@ Get an API key:
 API docs:
 - https://dr.eamer.dev/code/api/
 
-## ClawHub Artifacts
+## OpenClaw / ClawHub Artifacts
 
 - `clawhub-package.json`
 - `aliases.generated.json`
