@@ -66,4 +66,4 @@ API docs:
 
 MIT — see [LICENSE](LICENSE)
 
-Built by [Luke Steuber](https://lukesteuber.com) — [luke@lukesteuber.com](mailto:luke@lukesteuber.com)
+Built by [Luke Steuber](https://lukesteuber.com) · [luke@lukesteuber.com](mailto:luke@lukesteuber.com) · [@lukesteuber.com](https://bsky.app/profile/lukesteuber.com)
