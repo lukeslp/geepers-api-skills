@@ -3,14 +3,17 @@ name: geepers-etymology
 description: Look up word etymology, historical sound changes, language family trees, and word evolution through the dr.eamer.dev etymology and diachronic linguistics API. Use for language history research, writing, or exploring how words have changed over time.
 ---
 
-# Dreamer Etymology
+> Legacy compatibility: `DREAMER_API_KEY` is still accepted as an alias for `GEEPERS_API_KEY`.
+
+
+# Geepers API Etymology
 
 Access etymology and historical linguistics data at `https://api.dr.eamer.dev`.
 
 ## Authentication
 
 ```bash
-export DREAMER_API_KEY=your_key_here
+export GEEPERS_API_KEY=your_api_key_here
 ```
 
 ## Endpoints

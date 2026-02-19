@@ -3,7 +3,10 @@ name: geepers-llm
 description: Send requests to the dr.eamer.dev LLM API for chat completions, vision analysis, image generation, text-to-speech, and video generation across 12 model providers. Use when you need to call an external LLM endpoint or want to compare responses across providers.
 ---
 
-# Dreamer LLM
+> Legacy compatibility: `DREAMER_API_KEY` is still accepted as an alias for `GEEPERS_API_KEY`.
+
+
+# Geepers API LLM
 
 Access 12 LLM providers through a single unified API at `https://api.dr.eamer.dev`.
 
@@ -12,7 +15,7 @@ Access 12 LLM providers through a single unified API at `https://api.dr.eamer.de
 Set your API key in an environment variable or pass it per-request:
 
 ```bash
-export DREAMER_API_KEY=your_key_here
+export GEEPERS_API_KEY=your_api_key_here
 ```
 
 Get a key: email luke@lukesteuber.com or visit https://dr.eamer.dev
@@ -22,7 +25,7 @@ Get a key: email luke@lukesteuber.com or visit https://dr.eamer.dev
 ### Chat Completion
 ```
 POST https://api.dr.eamer.dev/v1/llm/chat
-Headers: X-API-Key: $DREAMER_API_KEY
+Headers: X-API-Key: $GEEPERS_API_KEY
 Body:
 {
   "model": "claude-sonnet-4-5-20250929",

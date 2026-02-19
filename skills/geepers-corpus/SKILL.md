@@ -3,7 +3,10 @@ name: geepers-corpus
 description: Query the COCA (Corpus of Contemporary American English) linguistics API for word frequency, collocations, concordances, and historical usage trends. Use for linguistic research, writing assistance, or understanding how words are actually used in American English.
 ---
 
-# Dreamer Corpus
+> Legacy compatibility: `DREAMER_API_KEY` is still accepted as an alias for `GEEPERS_API_KEY`.
+
+
+# Geepers API Corpus
 
 Access the COCA corpus API at `https://api.dr.eamer.dev`.
 
@@ -12,7 +15,7 @@ COCA contains 1+ billion words of contemporary American English from spoken, fic
 ## Authentication
 
 ```bash
-export DREAMER_API_KEY=your_key_here
+export GEEPERS_API_KEY=your_api_key_here
 ```
 
 ## Endpoints

@@ -3,14 +3,17 @@ name: geepers-orchestrate
 description: Run multi-agent Dream Cascade (hierarchical 3-tier synthesis) or Dream Swarm (parallel multi-domain search) workflows via the dr.eamer.dev orchestration API. Use when a task benefits from multiple specialized agents working in parallel or hierarchically.
 ---
 
-# Dreamer Orchestrate
+> Legacy compatibility: `DREAMER_API_KEY` is still accepted as an alias for `GEEPERS_API_KEY`.
+
+
+# Geepers API Orchestrate
 
 Run multi-agent workflows through `https://api.dr.eamer.dev`.
 
 ## Authentication
 
 ```bash
-export DREAMER_API_KEY=your_key_here
+export GEEPERS_API_KEY=your_api_key_here
 ```
 
 ## Endpoints

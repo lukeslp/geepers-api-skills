@@ -3,14 +3,17 @@ name: geepers-data
 description: Fetch structured data from 17 authoritative APIs — arXiv, Census Bureau, GitHub, NASA, Wikipedia, PubMed, news, weather, finance, FEC, and more — through a single endpoint. Use when you need real data from authoritative sources for research, visualizations, or analysis.
 ---
 
-# Dreamer Data
+> Legacy compatibility: `DREAMER_API_KEY` is still accepted as an alias for `GEEPERS_API_KEY`.
+
+
+# Geepers API Data
 
 Access 17 structured data sources through `https://api.dr.eamer.dev`.
 
 ## Authentication
 
 ```bash
-export DREAMER_API_KEY=your_key_here
+export GEEPERS_API_KEY=your_api_key_here
 ```
 
 ## Endpoints
