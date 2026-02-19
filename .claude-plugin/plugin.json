@@ -1,27 +1,99 @@
 {
   "name": "geepers-api-skills",
   "version": "1.0.0",
-  "description": "Agent Skills for the dr.eamer.dev public API — LLM, data, orchestration, corpus linguistics, and etymology",
+  "description": "Generated OpenClaw/ClawHub mirror for geepers skills.",
   "skills": [
     {
-      "name": "geepers-llm",
-      "path": "skills/geepers-llm/SKILL.md"
+      "name": "builder",
+      "path": "skills/builder/SKILL.md"
     },
     {
-      "name": "geepers-data",
-      "path": "skills/geepers-data/SKILL.md"
+      "name": "data-fetch",
+      "path": "skills/data-fetch/SKILL.md"
     },
     {
-      "name": "geepers-orchestrate",
-      "path": "skills/geepers-orchestrate/SKILL.md"
+      "name": "datavis",
+      "path": "skills/datavis/SKILL.md"
+    },
+    {
+      "name": "dream-swarm",
+      "path": "skills/dream-swarm/SKILL.md"
+    },
+    {
+      "name": "engineering",
+      "path": "skills/engineering/SKILL.md"
+    },
+    {
+      "name": "executive",
+      "path": "skills/executive/SKILL.md"
+    },
+    {
+      "name": "finance",
+      "path": "skills/finance/SKILL.md"
     },
     {
       "name": "geepers-corpus",
       "path": "skills/geepers-corpus/SKILL.md"
     },
     {
+      "name": "geepers-data",
+      "path": "skills/geepers-data/SKILL.md"
+    },
+    {
       "name": "geepers-etymology",
       "path": "skills/geepers-etymology/SKILL.md"
+    },
+    {
+      "name": "geepers-llm",
+      "path": "skills/geepers-llm/SKILL.md"
+    },
+    {
+      "name": "geepers-orchestrate",
+      "path": "skills/geepers-orchestrate/SKILL.md"
+    },
+    {
+      "name": "git-hygiene-guardian",
+      "path": "skills/git-hygiene-guardian/SKILL.md"
+    },
+    {
+      "name": "mcp-orchestration",
+      "path": "skills/mcp-orchestration/SKILL.md"
+    },
+    {
+      "name": "planner",
+      "path": "skills/planner/SKILL.md"
+    },
+    {
+      "name": "product",
+      "path": "skills/product/SKILL.md"
+    },
+    {
+      "name": "quality",
+      "path": "skills/quality/SKILL.md"
+    },
+    {
+      "name": "scout",
+      "path": "skills/scout/SKILL.md"
+    },
+    {
+      "name": "server-deploy",
+      "path": "skills/server-deploy/SKILL.md"
+    },
+    {
+      "name": "swarm",
+      "path": "skills/swarm/SKILL.md"
+    },
+    {
+      "name": "team",
+      "path": "skills/team/SKILL.md"
+    },
+    {
+      "name": "testing",
+      "path": "skills/testing/SKILL.md"
+    },
+    {
+      "name": "validator",
+      "path": "skills/validator/SKILL.md"
     }
   ]
 }

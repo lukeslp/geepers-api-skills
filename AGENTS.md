@@ -1,50 +1,47 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository contains API-focused skill packs for `api.dr.eamer.dev`.
-- `skills/<skill-name>/SKILL.md`: required instructions for each API skill.
-- `.claude-plugin/`: plugin metadata for distribution.
-- `publish-to-clawhub.sh`: publish helper script.
-- `README.md`: install targets for Claude Code, Codex, and Gemini CLI.
+This repository is a generated OpenClaw/ClawHub mirror of geepers skills.
+- `skills/<skill-name>/SKILL.md`: required instruction file for each skill.
+- `README.md`: install and sync workflow.
+- `clawhub-package.json`: generated package metadata.
+- `publish-to-clawhub.sh`: bulk publish script.
 
-Use clear skill boundaries (LLM, data, orchestration, corpus, etymology) and keep each folder self-contained.
+Keep skill folders self-contained and aligned with canonical naming.
 
 ## Build, Test, and Development Commands
-Focus on skill validation and install smoke tests.
+This repo is distribution-focused; validate generated content after sync.
 
 ```bash
-# Discover all skills
+# List all generated skills
 find skills -mindepth 2 -maxdepth 2 -name SKILL.md | sort
 
-# Confirm frontmatter keys exist
+# Validate required frontmatter keys
 rg -n "^(name|description):" skills/*/SKILL.md
 
-# Install into Codex for local smoke test
-for s in geepers-llm geepers-data geepers-orchestrate geepers-corpus geepers-etymology; do
-  cp -a "skills/$s" "$HOME/.codex/skills/$s"
-done
+# Validate metadata JSON
+python3 -m json.tool clawhub-package.json >/dev/null
 
-# Optional publish workflow
+# Optional publish
 bash publish-to-clawhub.sh
 ```
 
 ## Coding Style & Naming Conventions
-- Every `SKILL.md` must start with YAML frontmatter.
+- Every `SKILL.md` starts with YAML frontmatter.
 - Required keys: `name`, `description`.
-- Keep names lowercase kebab-case and aligned with directory names.
-- Use concise, API-specific instructions with concrete endpoint/use-case examples.
+- Use lowercase kebab-case for skill names and folders.
+- Keep instructions concise and example-driven.
 
 ## Testing Guidelines
-- Run frontmatter checks on every changed skill.
-- Smoke-test at least one prompt per edited skill after install.
-- For publish script changes, run shell syntax check (`bash -n publish-to-clawhub.sh`).
+- Run frontmatter checks for all changed skills.
+- Validate `clawhub-package.json` after regeneration.
+- Test each edited skill manually in a target client.
 
 ## Commit & Pull Request Guidelines
-Commit history uses semantic prefixes (`feat:`, `refactor:`).
-- Continue Conventional Commits.
-- Keep PRs scoped and list affected skills.
-- Include validation commands and any API behavior assumptions.
+Use Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`).
+- Keep changes scoped to one logical concern.
+- Include changed paths and validation commands in PRs.
 
 ## Security & Configuration Tips
-- Never commit API keys or secrets.
-- Avoid embedding credentials in examples; use environment-variable placeholders.
+- Never commit API keys, tokens, or local credentials.
+- Keep generated temp artifacts out of version control.

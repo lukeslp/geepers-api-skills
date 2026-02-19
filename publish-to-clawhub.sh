@@ -1,22 +1,28 @@
 #!/bin/bash
-# Publish geepers-api-skills to ClawHub
-# Run this once after authenticating: npx clawhub login
-#
-# Then run: bash publish-to-clawhub.sh
+# Publish all skills in this mirror to ClawHub/OpenClaw
+# Run once after authenticating: npx clawhub login
 
-set -e
+set -euo pipefail
 
-SKILLS=(geepers-llm geepers-data geepers-orchestrate geepers-corpus geepers-etymology)
+VERSION="${SKILL_VERSION:-1.0.0}"
+CHANGELOG="${SKILL_CHANGELOG:-Generated mirror publish}"
+
+mapfile -t SKILLS < <(find skills -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort)
+
+if [[ ${#SKILLS[@]} -eq 0 ]]; then
+  echo "No skills found under skills/"
+  exit 1
+fi
 
 for skill in "${SKILLS[@]}"; do
   echo "Publishing $skill..."
   npx clawhub publish "skills/$skill" \
     --slug "lukeslp/$skill" \
     --name "$skill" \
-    --version "1.0.0" \
-    --changelog "Initial release"
+    --version "$VERSION" \
+    --changelog "$CHANGELOG"
   echo "✓ $skill published"
 done
 
-echo "All skills published to ClawHub!"
+echo "All skills published to ClawHub/OpenClaw"
 echo "View at: https://clawhub.ai/lukeslp"
