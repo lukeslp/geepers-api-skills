@@ -4,9 +4,9 @@
 ![Platform: ClawHub](https://img.shields.io/badge/platform-ClawHub-red.svg)
 ![Skills: 23](https://img.shields.io/badge/skills-23-brightgreen.svg)
 
-23 skills for planning, building, shipping, and researching — for the ClawHub API (formerly OpenClaw).
+23 skills that cover the full development loop — planning, building, shipping, and research — wired for the ClawHub API (formerly OpenClaw).
 
-Part of the [geepers](https://github.com/lukeslp/geepers) ecosystem — [PyPI](https://pypi.org/project/geepers-llm/) · [MCP servers](https://github.com/lukeslp/geepers-kernel) · [Claude Code](https://github.com/lukeslp/geepers-skills) · [Codex CLI](https://github.com/lukeslp/geepers-gpt) · [Gemini](https://github.com/lukeslp/geepers-gemini) · [Manus](https://github.com/lukeslp/geepers-manus) · [beltalowda](https://github.com/lukeslp/beltalowda)
+Part of the [geepers](https://github.com/lukeslp/geepers) ecosystem — [PyPI](https://pypi.org/project/geepers-llm/) · [MCP servers](https://github.com/lukeslp/geepers-kernel) · [Claude Code](https://github.com/lukeslp/geepers-skills) · [Codex CLI](https://github.com/lukeslp/geepers-gpt) · [Gemini](https://github.com/lukeslp/geepers-gemini) · [beltalowda](https://github.com/lukeslp/beltalowda)
 
 ## Install
 
@@ -57,7 +57,6 @@ Previously distributed as `dreamer-api-skills`. The `clawhub-package.json` inclu
 - **Claude Code**: [geepers-skills](https://github.com/lukeslp/geepers-skills)
 - **Codex CLI**: [geepers-gpt](https://github.com/lukeslp/geepers-gpt)
 - **Gemini**: [geepers-gemini](https://github.com/lukeslp/geepers-gemini)
-- **Manus**: [geepers-manus](https://github.com/lukeslp/geepers-manus)
 
 ## Author
 
